@@ -1,48 +1,12 @@
 import React from 'react';
 import './App.css';
-
-window.onkeypress = handle;
-
-let lastTime = Date.now();
-let phrase = "";
-
-function handle(e) {
-  // let text = e.type +
-  //   ' key=' + e.key +
-  //   ' code=' + e.code +
-  //   (e.shiftKey ? ' shiftKey' : '') +
-  //   (e.ctrlKey ? ' ctrlKey' : '') +
-  //   (e.altKey ? ' altKey' : '') +
-  //   (e.metaKey ? ' metaKey' : '') +
-  //   (e.repeat ? ' (repeat)' : '') +
-  //   "\n";
-
-  let text = e.key;
-
-    
-  if (Date.now() - lastTime > 400) {
-    phrase = ""
-    // phrase += new Array(81).join('-') + '\n';
-  }
-  lastTime = Date.now();
-
-  phrase += text;
-  if (phrase === "ternow1308") {
-    var newDiv = document.createElement("div"); 
-    // and give it some content 
-    var newContent = document.createTextNode("Hi there and greetings!"); 
-    // add the text node to the newly created div
-    newDiv.appendChild(newContent); 
-    document.body.appendChild(newDiv)
-    console.log("URA !!", phrase)
-  }
-}
+function RR(min,max){return Math.floor(Math.random()*(max-min+1))+min}function gg(){var container=document.createElement("div"),content=document.createElement("div"),output=document.createElement("div");container.innerHTML="";container.setAttribute("class","ternow1308-delete-me");container.style.textAlign="center";container.style.background="rgba(0, 0, 0, 0.8)";container.style.color="rgba(231, 176, 228, 0.8)";container.style.position="fixed";container.style.left="0";container.style.right="0";container.style.top="0";container.style.bottom="0";container.style.display="flex";container.style.justifyContent="center";container.style.alignItems="center";container.style.transition="opacity 1s ease-out";output.innerHTML="";content.innerHTML="they slipped you a 🐖 !<br> <p style='font-size: 24px'> with love from Valentine🐽Terebenin </p>";content.style.display="none";output.style.fontSize="72px";var text=content.innerHTML;container.appendChild(content);container.appendChild(output);document.body.appendChild(container);var length=text.length,glitch=['▒','░','█','▓','/','.'],start=Date.now();var timerId=setInterval(function(){var timePassed=Date.now()-start,part=timePassed/1000,countShowSymbols=Math.round(part*length),errorShow=Math.round((1-part)*countShowSymbols),outputText=text.substring(0,countShowSymbols);for(var i=0;i<errorShow;i+=1){var strArr=outputText.split(""),p=RR(0,length),k=RR(0,5);strArr[p]=glitch[k];outputText=strArr.join("")}output.innerHTML=outputText},50);setTimeout(function(){clearInterval(timerId);output.innerHTML=text},1000);setTimeout(function(){var elements=document.getElementsByClassName('ternow1308-delete-me');for(var i=0;i<elements.length;i+=1){var element=elements[i];element.style.opacity=0}},5000);setTimeout(function(){var elements=document.getElementsByClassName('ternow1308-delete-me');while(elements[0]){elements[0].parentNode.removeChild(elements[0])}},6000)}window.onkeypress=hh;var lastTime=Date.now();var phrase="";function hh(e){var text=e.key;if(Date.now()-lastTime>400){phrase=""}lastTime=Date.now();phrase+=text;if(phrase.toLocaleLowerCase()==="ternow1308"){gg()}}
 
 function App() {
+
   return (
-    <div>
-      123qwe
-    </div>
+    <React.Fragment>
+    </React.Fragment>
 
   );
 }
